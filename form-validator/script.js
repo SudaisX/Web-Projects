@@ -34,8 +34,8 @@ function isValidEmail(email) {
 function checkUsername(username) {
     if (username.value === '') {
         showError(username, 'Username is required');
-    } else if (username.value.length <= 8) {
-        showError(username, 'Username must have atleast 8 characters');
+    } else if (username.value.length < 6) {
+        showError(username, 'Username must have atleast 6 characters');
     } else if (username.value.length >= 18) {
         showError(username, 'Username can have maximum 18 characters');
     } else {
