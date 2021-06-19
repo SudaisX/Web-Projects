@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #171717;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.movie-container {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.movie-container select {
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+    font-style: 14px;
+    margin-left: 10px;
+    padding: 5px 15px 5px 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.container {
+    background-color: rgba(134, 117, 117, 0.1);
+    perspective: 1000px;
+    margin-bottom: 30px;
+    padding: 10px 30px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+}
+
+.seat {
+    background-color: #346751;
+    height: 24px;
+    width: 30px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.seat.selected {
+    background-color: #FFC107;
+}
+
+.seat.occupied {
+    background-color: #DA0037;
+}
+
+.seat:nth-of-type(2),
+.seat:nth-last-of-type(3) {
+    margin-right: 18px;
+}
+
+.seat:not(.occupied):hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.showcase .seat:not(.occupied):hover {
+    transform: scale(1);
+    cursor: default;
+}
+
+.showcase {
+    background-color: rgba(134, 117, 117, 0.1);
+    color: #777;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 30px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.showcase li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.showcase small {
+    margin-left: 2px;
+}
+
+.row {
+    display: flex;
+}
+
+.screen {
+    background-color: #EDEDED;
+    height: 105px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+p.text {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+p.text span {
+    color: #FFC107;
+}
+
+#purchase-btn {
+    background-color: #FFC107;
+    border: 0;
+    border-radius: 10px;
+    color: #EDEDED;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    padding: 14px 40px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#purchase-btn:focus {
+    outline: 0;
+}
+
+#purchase-btn:active {
+    transform: scale(0.98);
+}
