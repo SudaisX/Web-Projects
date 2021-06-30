@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta Data -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Styles -->
+        <link rel="stylesheet" href="styles.css" />
+        <!-- Title -->
+        <title>Hangman</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="heading">hangman</h1>
+            <p class="sub-heading">Find the hidden word to win</p>
+            <p class="sub-heading">enter a letter</p>
+        </header>
+
+        <!-- Game Container -->
+        <div class="game-container">
+            <!-- Pole, Rope and Man Figure's SVG -->
+            <svg height="250" width="200" class="man-container">
+                <!-- Rod -->
+                <line x1="60" y1="20" x2="140" y2="20" />
+                <line class="rope" x1="140" y1="20" x2="140" y2="50" />
+                <line x1="60" y1="20" x2="60" y2="230" />
+                <line x1="20" y1="230" x2="100" y2="230" />
+                <!-- Head -->
+                <circle class="man man-part" cx="140" cy="70" r="20" />
+                <!-- Body -->
+                <line class="man man-part" x1="140" y1="90" x2="140" y2="150" />
+                <!-- Arms -->
+                <line class="man man-part" x1="140" y1="120" x2="120" y2="100" />
+                <line class="man man-part" x1="140" y1="120" x2="160" y2="100" />
+                <!-- Legs -->
+                <line class="man man-part" x1="140" y1="150" x2="120" y2="180" />
+                <line class="man man-part" x1="140" y1="150" x2="160" y2="180" />
+            </svg>
+
+            <!-- Container for wrong letters input -->
+            <div class="wrong-letters-container">
+                <div class="wrong-letters" id="wrong-letters">
+                    <!-- Wrong letters to be added through JS -->
+                    <!-- <p>Wrong letters</p> -->
+                </div>
+            </div>
+
+            <!-- Correct letters for the word -->
+            <div class="word" id="word">
+                <!-- letters added through JS -->
+                <!-- <div class="letter">l</div> -->
+            </div>
+        </div>
+
+        <!-- Container for final messages -->
+        <div class="popup-container" id="popup-container">
+            <div class="popup">
+                <h2 id="final-message"></h2>
+                <button class="play-again">Play Again</button>
+            </div>
+        </div>
+
+        <!-- Notification -->
+        <div class="notification-container" id="notification-container">
+            <p>You have already entered this letter.</p>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="app.js"></script>
+    </body>
+</html>
