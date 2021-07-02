@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Metadata -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Styles -->
+        <link rel="stylesheet" href="styles.css" />
+        <!-- Project Title -->
+        <title>Expense Tracker</title>
+    </head>
+    <!-- Body -->
+    <body>
+        <h2><span class="title">Expense</span> Tracker</h2>
+        <div class="container">
+            <!-- Balance -->
+            <h4>Your Balance</h4>
+            <h1 id="balance">$0.00</h1>
+
+            <!-- Income and Expense Container -->
+            <div class="in-ex-container">
+                <div>
+                    <h4 class="income">Income</h4>
+                    <p id="money-plus" class="money">+$0.00</p>
+                </div>
+                <div>
+                    <h4 class="expense">Expense</h4>
+                    <p id="money-minus" class="money">-$0.00</p>
+                </div>
+            </div>
+
+            <!-- Expense History -->
+            <h3>History</h3>
+            <ul id="list" class="list">
+                <!-- <li class="minus">Cash <span>-$400</span><button class="delete-btn">x</button></li> -->
+            </ul>
+
+            <h3>Add New Transaction</h3>
+            <form id="form">
+                <div class="form-control">
+                    <input type="text" id="text" placeholder="enter transaction name" />
+                </div>
+                <div class="form-control">
+                    <input type="number" id="amount" placeholder="enter amount" />
+                    <label for="amount">
+                        negative(-) = <span class="minus">expense</span><br />positive(+) =
+                        <span class="plus">income</span></label
+                    >
+                </div>
+                <button class="btn">Add Transaction</button>
+            </form>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="app.js"></script>
+    </body>
+</html>
