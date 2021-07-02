@@ -2,7 +2,7 @@
 
 :root {
     --dark: #171717;
-    --light: #343A40;
+    --light: #303131;
     --red: #DA0037;
     --white: #EDEDED;
     --yellow: #FFC107;
@@ -155,7 +155,7 @@ input[type='text'] {
 .single-meal-info {
     margin: 20px;
     padding: 10px;
-    border: 2px var(--blue) solid;
+    border: 2px var(--light) solid;
     border-radius: 5px;
 }
 
@@ -179,9 +179,8 @@ input[type='text'] {
     /* display: flex; */
     align-items: center;
     justify-content: space-between;
-    border: 1px solid;
     border-radius: 5px;
-    background-color: var(--blue);
+    background-color: var(--light);
     display: inline-flex;
     color: var(--white);
     font-weight: bold;
@@ -198,11 +197,10 @@ input[type='text'] {
 }
 
 .instructions-container {
-    background-color: var(--blue);
+    background-color: var(--light);
     padding: 20px;
     border-radius: 8px;
     text-align: justify;
-    border: 1px solid var(--white);
 }
 
 @media(max-width: 500px) {
