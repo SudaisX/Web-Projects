@@ -1,11 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 
+:root {
+    --dark: #171717;
+    --light: #343A40;
+    --red: #DA0037;
+    --white: #EDEDED;
+    --yellow: #FFC107;
+    --green: #4AA96C;
+    --container: rgba(134, 117, 117, 0.1);
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    background-color: var(--dark);
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
