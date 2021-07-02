@@ -174,7 +174,7 @@ input[type='text'] {
     list-style-type: none;
 }
 
-.single-meal li {
+.single-meal ul li {
     width: 40%;
     /* display: flex; */
     align-items: center;

@@ -86,6 +86,8 @@ function addMealToDOM(meal) {
         }
     }
 
+    const instructions = meal.strInstructions.split('.').join('</li><li>');
+
     resultHeading.innerHTML = '';
     meals.innerHTML = '';
 
@@ -104,7 +106,8 @@ function addMealToDOM(meal) {
                 </ul>
                 <h2>Instructions</h2>
                 <div class='instructions-container'>
-                    <p>${meal.strInstructions}</p>
+                    <ol><li>${instructions.slice(0, instructions.length - 2)}</ol>
+                    
                 </div>
                 
             </div>
