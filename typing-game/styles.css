@@ -42,7 +42,7 @@ body {
 
 .stats {
     display: flex;
-    width: 80%;
+    width: 1000px;
     justify-content: space-between;
     margin-bottom: 80px;
 }
