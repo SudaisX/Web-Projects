@@ -15,7 +15,7 @@ const cover = document.querySelector('#cover');
 const songs = ['colours', 'after hours'];
 
 // To keep track of songs
-let songIndex = 1;
+let songIndex = 0;
 
 // Initially load song into DOM
 loadSong(songs[songIndex]);
